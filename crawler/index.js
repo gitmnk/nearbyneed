@@ -22,7 +22,7 @@ async function fetchSFPublicFacilities(crawlTime) {
             desc: item.service_details || item.service_subtype || "Recent 311 service activity.",
             loc: item.address || "SF Location",
             ver: true, // It came from the official DataSF API
-            upd: crawlTime // Use the precise time the crawler ran
+            upd: `${crawlTime} (Source: DataSF 311 API)` // Include the precise time and source
         }));
         
         console.log(`Successfully mapped ${dynamicData.length} records from DataSF.`);
