@@ -1,10 +1,16 @@
 // Global Dataset
 let dataset = [];
+let map = null;
+let markers = [];
+let isMapView = false;
 
 // App Logic
 const container = document.getElementById('resource-container');
+const mapContainer = document.getElementById('map-container');
 const locationBadge = document.getElementById('location-badge');
-const filterBtns = document.querySelectorAll('.filter-btn');
+const filterBtns = document.querySelectorAll('.filter-group .filter-btn');
+const btnListView = document.getElementById('btn-list-view');
+const btnMapView = document.getElementById('btn-map-view');
 
 let currentCity = "Detecting...";
 let currentFilter = "all";
@@ -55,6 +61,52 @@ function init() {
 function updateUI() {
     locationBadge.textContent = `Resources: ${currentCity}`;
     renderList();
+    if (isMapView && map) {
+        updateMapMarkers();
+    }
+}
+
+function initMap() {
+    map = L.map('map-container').setView([37.79, -122.35], 11);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+}
+
+function updateMapMarkers() {
+    if (!map) return;
+    
+    // Clear existing markers
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
+    
+    const filtered = dataset.filter(item => {
+        const cityMatch = item.city === currentCity;
+        const catMatch = currentFilter === 'all' || item.cat === currentFilter;
+        return cityMatch && catMatch;
+    });
+    
+    const bounds = [];
+    
+    filtered.forEach(item => {
+        if (item.lat && item.lng) {
+            const popupContent = `
+                <div style="font-family: inherit;">
+                    <h3 style="margin: 0 0 5px 0; font-size: 16px;">${item.name}</h3>
+                    <p style="margin: 0 0 10px 0; font-size: 13px; color: #4b5563;">${item.desc}</p>
+                    ${item.url ? `<a href="${item.url}" target="_blank" style="display: block; width: 100%; text-align: center; padding: 6px; background: #2563eb; color: white; text-decoration: none; border-radius: 6px; font-weight: 500;">Visit Website</a>` : ''}
+                </div>
+            `;
+            const marker = L.marker([item.lat, item.lng]).bindPopup(popupContent);
+            marker.addTo(map);
+            markers.push(marker);
+            bounds.push([item.lat, item.lng]);
+        }
+    });
+    
+    if (bounds.length > 0) {
+        map.fitBounds(bounds, { padding: [50, 50] });
+    }
 }
 
 function renderList() {
@@ -77,6 +129,7 @@ function renderList() {
             </div>
             <h2 class="resource-title">${item.name}</h2>
             <p class="resource-desc">${item.desc}</p>
+            ${item.url ? `<a href="${item.url}" target="_blank" class="website-link" style="display: inline-block; margin-bottom: 12px; color: #2563eb; text-decoration: none; font-weight: 500; font-size: 0.9rem;"><i data-lucide="external-link" size="14" style="vertical-align: middle;"></i> Visit Website</a>` : ''}
             <div class="location-info">
                 <i data-lucide="map-pin" size="14"></i>
                 <span>${item.loc}</span>
@@ -115,8 +168,37 @@ filterBtns.forEach(btn => {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentFilter = btn.dataset.filter;
-        renderList();
+        updateUI();
     });
+});
+
+// View Toggles
+btnListView?.addEventListener('click', () => {
+    isMapView = false;
+    btnListView.classList.add('active');
+    btnMapView.classList.remove('active');
+    
+    // Switch to grid view ensuring we follow CSS grid definition usually set by '.resource-list'
+    container.style.display = 'grid'; 
+    mapContainer.style.display = 'none';
+});
+
+btnMapView?.addEventListener('click', () => {
+    isMapView = true;
+    btnMapView.classList.add('active');
+    btnListView.classList.remove('active');
+    
+    container.style.display = 'none';
+    mapContainer.style.display = 'block';
+    
+    if (!map) {
+        initMap();
+    }
+    // Required when making map visible again after hiding
+    setTimeout(() => {
+        map.invalidateSize();
+        updateMapMarkers();
+    }, 100);
 });
 
 init();

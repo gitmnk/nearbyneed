@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -29,13 +30,19 @@
             </div>
         </section>
 
-        <section class="filters container">
+        <section class="filters container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div class="filter-group">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="food">Food</button>
                 <button class="filter-btn" data-filter="shelter">Shelter</button>
                 <button class="filter-btn" data-filter="water">Water</button>
             </div>
+            
+            <div class="view-toggle">
+                <button id="btn-list-view" class="filter-btn active"><i data-lucide="list"></i> List View</button>
+                <button id="btn-map-view" class="filter-btn"><i data-lucide="map"></i> Map View</button>
+            </div>
+        </section>
         </section>
 
         <section class="resources container">
@@ -43,6 +50,9 @@
                 <!-- Loading state -->
                 <div class="loading-state">Finding resources near you...</div>
             </div>
+            
+            <!-- Map Container (Hidden by default) -->
+            <div id="map-container" class="map-container" style="display: none; height: 600px; width: 100%; border-radius: 12px; margin-top: 1rem; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);"></div>
         </section>
     </main>
 
@@ -52,6 +62,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="app.js"></script>
     <script>
         lucide.createIcons();

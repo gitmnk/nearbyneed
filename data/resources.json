@@ -1,92 +1,98 @@
 [
   {
     "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "name": "GLIDE Daily Meals",
+    "cat": "food",
+    "desc": "Breakfast, lunch, and dinner served daily.",
+    "loc": "330 Ellis St, SF",
+    "url": "https://www.glide.org",
+    "lat": 37.7853,
+    "lng": -122.4115,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   },
   {
     "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "name": "St. Anthony's Dining Room",
+    "cat": "food",
+    "desc": "Balanced lunch served daily. Open to everyone. 10:00 AM - 1:30 PM.",
+    "loc": "121 Golden Gate Ave, SF",
+    "url": "https://www.stanthonysf.org",
+    "lat": 37.782,
+    "lng": -122.4121,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   },
   {
     "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "name": "MSC South (Shelter)",
+    "cat": "shelter",
+    "desc": "Largest emergency shelter in SF. Call 311 for bed reservation information.",
+    "loc": "525 5th St, SF",
+    "url": "https://hsh.sfgov.org",
+    "lat": 37.7772,
+    "lng": -122.3967,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   },
   {
     "city": "SF",
-    "name": "Public Facility",
+    "name": "Civic Center Water Station",
     "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "desc": "Clean drinking water bottle filling station. High priority city maintenance.",
+    "loc": "Civic Center Plaza, SF",
+    "url": "https://sfwater.org",
+    "lat": 37.7794,
+    "lng": -122.4168,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   },
   {
-    "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "city": "Oakland",
+    "name": "St. Vincent de Paul",
+    "cat": "food",
+    "desc": "Community kitchen serving hot meals. Breakfast: 10:45 AM - 12:45 PM.",
+    "loc": "675 23rd St, Oakland",
+    "url": "https://www.svdp-alameda.org",
+    "lat": 37.8132,
+    "lng": -122.2701,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   },
   {
-    "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "city": "Oakland",
+    "name": "CityTeam Oakland",
+    "cat": "shelter",
+    "desc": "Men's emergency shelter and hot meals. Check-in at 5:00 PM.",
+    "loc": "722 Washington St, Oakland",
+    "url": "https://cityteam.org/oakland",
+    "lat": 37.8005,
+    "lng": -122.2753,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   },
   {
-    "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "city": "Oakland",
+    "name": "Mandela Grocery Co-op",
+    "cat": "food",
+    "desc": "Food bank partners. Verified distribution point for healthy produce.",
+    "loc": "1430 7th St, Oakland",
+    "url": "https://www.mandelagrocery.coop",
+    "lat": 37.8052,
+    "lng": -122.2964,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   },
   {
-    "city": "SF",
-    "name": "Public Facility",
+    "city": "Oakland",
+    "name": "DeFremery Park Water",
     "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
+    "desc": "Public water fountain and bottle fill. Open during park hours.",
+    "loc": "1651 Adeline St, Oakland",
+    "url": "https://www.oaklandparks.org",
+    "lat": 37.8135,
+    "lng": -122.2858,
     "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
-  },
-  {
-    "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
-    "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
-  },
-  {
-    "city": "SF",
-    "name": "Public Facility",
-    "cat": "water",
-    "desc": "City maintained facility.",
-    "loc": "SF",
-    "ver": true,
-    "upd": "Mar 29, 2026, 2:40 PM"
+    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
   }
 ]
