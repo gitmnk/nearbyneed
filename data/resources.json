@@ -9,7 +9,7 @@
     "lat": 37.7853,
     "lng": -122.4115,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.glide.org)"
   },
   {
     "city": "SF",
@@ -21,7 +21,7 @@
     "lat": 37.782,
     "lng": -122.4121,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.stanthonysf.org)"
   },
   {
     "city": "SF",
@@ -33,7 +33,7 @@
     "lat": 37.7772,
     "lng": -122.3967,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://hsh.sfgov.org)"
   },
   {
     "city": "SF",
@@ -45,7 +45,7 @@
     "lat": 37.7794,
     "lng": -122.4168,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://sfwater.org)"
   },
   {
     "city": "Oakland",
@@ -57,7 +57,7 @@
     "lat": 37.8132,
     "lng": -122.2701,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.svdp-alameda.org)"
   },
   {
     "city": "Oakland",
@@ -69,7 +69,7 @@
     "lat": 37.8005,
     "lng": -122.2753,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://cityteam.org/oakland)"
   },
   {
     "city": "Oakland",
@@ -81,7 +81,7 @@
     "lat": 37.8052,
     "lng": -122.2964,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.mandelagrocery.coop)"
   },
   {
     "city": "Oakland",
@@ -93,6 +93,6 @@
     "lat": 37.8135,
     "lng": -122.2858,
     "ver": true,
-    "upd": "Mar 29, 2026, 3:01 PM (Source: Curated Local Database)"
+    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.oaklandparks.org)"
   }
 ]

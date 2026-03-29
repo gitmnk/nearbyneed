@@ -150,9 +150,10 @@ function renderList() {
                 <span class="resource-category">${item.cat}</span>
                 ${item.ver ? `<span class="verified-badge"><i data-lucide="shield-check" size="14"></i> Verified</span>` : ''}
             </div>
-            <h2 class="resource-title">${item.name}</h2>
+            <h2 class="resource-title">
+                ${item.url ? `<a href="${item.url}" target="_blank" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='inherit'">${item.name} <i data-lucide="external-link" size="16" style="color: #9cb3eb; vertical-align: text-bottom; margin-left: 2px;"></i></a>` : item.name}
+            </h2>
             <p class="resource-desc">${item.desc}</p>
-            ${item.url ? `<a href="${item.url}" target="_blank" class="website-link" style="display: inline-block; margin-bottom: 12px; color: #2563eb; text-decoration: none; font-weight: 500; font-size: 0.9rem;"><i data-lucide="external-link" size="14" style="vertical-align: middle;"></i> Visit Website</a>` : ''}
             <div class="location-info">
                 <i data-lucide="map-pin" size="14"></i>
                 <span>${item.loc}</span>
