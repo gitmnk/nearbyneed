@@ -14,13 +14,13 @@ async function fetchSFPublicFacilities(crawlTime) {
         
         const rawData = await res.json();
         
-        // Map the raw API structure to our unified NearbyNeed schema
+        // Map the raw API structure (SF 311 Service Requests) to our unified NearbyNeed schema
         const dynamicData = rawData.map(item => ({
             city: "SF",
-            name: item.facility_name || "Public Facility",
-            cat: "water", // Typically these have pit stops/water
-            desc: item.facility_type || item.remarks || "City maintained facility.",
-            loc: item.location ? `${item.location.latitude}, ${item.location.longitude}` : "SF",
+            name: item.service_name || "SF 311 Request",
+            cat: "other", // General requests class
+            desc: item.service_details || item.service_subtype || "Recent 311 service activity.",
+            loc: item.address || "SF Location",
             ver: true, // It came from the official DataSF API
             upd: crawlTime // Use the precise time the crawler ran
         }));
