@@ -5,32 +5,28 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-async function fetchSFPublicFacilities(crawlTime) {
-    try {
-        console.log("Fetching DataSF Public Facilities...");
-        // This is a sample DataSF endpoint for Public Restrooms/Water.
-        const res = await fetch('https://data.sfgov.org/resource/vw6y-z8j6.json?$limit=10');
-        if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
-        
-        const rawData = await res.json();
-        
-        // Map the raw API structure (SF 311 Service Requests) to our unified NearbyNeed schema
-        const dynamicData = rawData.map(item => ({
-            city: "SF",
-            name: item.service_name || "SF 311 Request",
-            cat: "other", // General requests class
-            desc: item.service_details || item.service_subtype || "Recent 311 service activity.",
-            loc: item.address || "SF Location",
-            ver: true, // It came from the official DataSF API
-            upd: `${crawlTime} (Source: DataSF 311 API)` // Include the precise time and source
-        }));
-        
-        console.log(`Successfully mapped ${dynamicData.length} records from DataSF.`);
-        return dynamicData;
-    } catch (error) {
-        console.error("Failed to fetch DataSF.", error);
-        return [];
-    }
+// Initial Curated Database
+// (Until you find the exact SODA API Endpoint IDs for Food/Shelter)
+const curatedDataset = [
+    { city: "SF", name: "GLIDE Daily Meals", cat: "food", desc: "Breakfast, lunch, and dinner served daily.", loc: "330 Ellis St, SF" },
+    { city: "SF", name: "St. Anthony's Dining Room", cat: "food", desc: "Balanced lunch served daily. Open to everyone. 10:00 AM - 1:30 PM.", loc: "121 Golden Gate Ave, SF" },
+    { city: "SF", name: "MSC South (Shelter)", cat: "shelter", desc: "Largest emergency shelter in SF. Call 311 for bed reservation information.", loc: "525 5th St, SF" },
+    { city: "SF", name: "Civic Center Water Station", cat: "water", desc: "Clean drinking water bottle filling station. High priority city maintenance.", loc: "Civic Center Plaza, SF" },
+    { city: "Oakland", name: "St. Vincent de Paul", cat: "food", desc: "Community kitchen serving hot meals. Breakfast: 10:45 AM - 12:45 PM.", loc: "675 23rd St, Oakland" },
+    { city: "Oakland", name: "CityTeam Oakland", cat: "shelter", desc: "Men's emergency shelter and hot meals. Check-in at 5:00 PM.", loc: "722 Washington St, Oakland" },
+    { city: "Oakland", name: "Mandela Grocery Co-op", cat: "food", desc: "Food bank partners. Verified distribution point for healthy produce.", loc: "1430 7th St, Oakland" },
+    { city: "Oakland", name: "DeFremery Park Water", cat: "water", desc: "Public water fountain and bottle fill. Open during park hours.", loc: "1651 Adeline St, Oakland" }
+];
+
+async function fetchCuratedResources(crawlTime) {
+    console.log("Fetching Curated Database...");
+    
+    // In Phase 2, you will replace this with fetch() calls to the specific DataSF Food/Shelter endpoints!
+    return curatedDataset.map(item => ({
+        ...item,
+        ver: true,
+        upd: `${crawlTime} (Source: Curated Local Database)`
+    }));
 }
 
 async function main() {
@@ -44,12 +40,9 @@ async function main() {
     });
     console.log(`Crawl timestamp: ${crawlTime}`);
     
-    // 1. Fetch dynamic data from various city APIs
-    const sfDynamicData = await fetchSFPublicFacilities(crawlTime);
-    // (In the future, we will combine with OaklandData, etc.)
-    const combinedDataset = [...sfDynamicData];
+    const combinedDataset = await fetchCuratedResources(crawlTime);
     
-    // 2. Save to output directory
+    // Save to output directory
     const outputDir = path.join(__dirname, '..', 'data');
     const outputFile = path.join(outputDir, 'resources.json');
     
