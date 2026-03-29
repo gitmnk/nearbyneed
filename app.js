@@ -156,7 +156,7 @@ function renderList() {
             <p class="resource-desc">${item.desc}</p>
             <div class="location-info">
                 <i data-lucide="map-pin" size="14"></i>
-                <span>${item.loc}</span>
+                <a href="https://maps.google.com/?q=${encodeURIComponent(item.loc)}" target="_blank" style="color: inherit; text-decoration: underline; text-decoration-color: #9cb3eb; text-underline-offset: 2px;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='inherit'">${item.loc}</a>
             </div>
             <div class="resource-footer">
                 <span class="updated-at">Confirmed ${item.upd}</span>
