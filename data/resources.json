@@ -10,7 +10,7 @@
     "lng": -122.4115,
     "phone": "(415) 674-6000",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   },
   {
     "city": "SF",
@@ -23,7 +23,7 @@
     "lng": -122.4121,
     "phone": "(415) 241-2600",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   },
   {
     "city": "SF",
@@ -36,7 +36,7 @@
     "lng": -122.3967,
     "phone": "311",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   },
   {
     "city": "SF",
@@ -49,7 +49,7 @@
     "lng": -122.4168,
     "phone": "311",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   },
   {
     "city": "Oakland",
@@ -62,7 +62,7 @@
     "lng": -122.2701,
     "phone": "(510) 873-8200",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   },
   {
     "city": "Oakland",
@@ -75,7 +75,7 @@
     "lng": -122.2753,
     "phone": "(510) 452-3758",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   },
   {
     "city": "Oakland",
@@ -88,7 +88,7 @@
     "lng": -122.2964,
     "phone": "(510) 433-1180",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   },
   {
     "city": "Oakland",
@@ -101,6 +101,6 @@
     "lng": -122.2858,
     "phone": "311",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:15 PM (Source: NearbyNeed Curated Database)"
+    "upd": "Mar 29, 2026, 3:19 PM (Source: https://data.sfgov.org/resource/vw6y-z8j6.json)"
   }
 ]

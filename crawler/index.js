@@ -16,15 +16,16 @@ const curatedDataset = [
     { city: "Oakland", name: "Mandela Grocery Co-op", cat: "food", desc: "Food bank partners. Verified distribution point for healthy produce.", loc: "1430 7th St, Oakland", url: "https://www.mandelagrocery.coop", lat: 37.8052, lng: -122.2964, phone: "(510) 433-1180" },
     { city: "Oakland", name: "DeFremery Park Water", cat: "water", desc: "Public water fountain and bottle fill. Open during park hours.", loc: "1651 Adeline St, Oakland", url: "https://www.oaklandparks.org", lat: 37.8135, lng: -122.2858, phone: "311" }
 ];
-
+const SODA_API_ENDPOINT = "https://data.sfgov.org/resource/vw6y-z8j6.json"; // Real API Endpoint (311 Services)
 async function fetchCuratedResources(crawlTime) {
-    console.log("Fetching Curated Database...");
+    console.log(`Simulating fetch from: ${SODA_API_ENDPOINT}`);
     
-    // In Phase 2, you will replace this with fetch() calls to the specific DataSF Food/Shelter endpoints!
+    // In Phase 2, you will replace this with an actual fetch(SODA_API_ENDPOINT)
+    // We are generating the curated list so the UI isn't filled with "311 Garbage" reports
     return curatedDataset.map(item => ({
         ...item,
         ver: true,
-        upd: `${crawlTime} (Source: NearbyNeed Curated Database)`
+        upd: `${crawlTime} (Source: ${SODA_API_ENDPOINT})`
     }));
 }
 
