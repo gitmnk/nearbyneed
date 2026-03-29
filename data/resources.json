@@ -8,8 +8,9 @@
     "url": "https://www.glide.org",
     "lat": 37.7853,
     "lng": -122.4115,
+    "phone": "(415) 674-6000",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.glide.org)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://www.glide.org)"
   },
   {
     "city": "SF",
@@ -20,8 +21,9 @@
     "url": "https://www.stanthonysf.org",
     "lat": 37.782,
     "lng": -122.4121,
+    "phone": "(415) 241-2600",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.stanthonysf.org)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://www.stanthonysf.org)"
   },
   {
     "city": "SF",
@@ -32,8 +34,9 @@
     "url": "https://hsh.sfgov.org",
     "lat": 37.7772,
     "lng": -122.3967,
+    "phone": "311",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://hsh.sfgov.org)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://hsh.sfgov.org)"
   },
   {
     "city": "SF",
@@ -44,8 +47,9 @@
     "url": "https://sfwater.org",
     "lat": 37.7794,
     "lng": -122.4168,
+    "phone": "311",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://sfwater.org)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://sfwater.org)"
   },
   {
     "city": "Oakland",
@@ -56,8 +60,9 @@
     "url": "https://www.svdp-alameda.org",
     "lat": 37.8132,
     "lng": -122.2701,
+    "phone": "(510) 873-8200",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.svdp-alameda.org)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://www.svdp-alameda.org)"
   },
   {
     "city": "Oakland",
@@ -68,8 +73,9 @@
     "url": "https://cityteam.org/oakland",
     "lat": 37.8005,
     "lng": -122.2753,
+    "phone": "(510) 452-3758",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://cityteam.org/oakland)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://cityteam.org/oakland)"
   },
   {
     "city": "Oakland",
@@ -80,8 +86,9 @@
     "url": "https://www.mandelagrocery.coop",
     "lat": 37.8052,
     "lng": -122.2964,
+    "phone": "(510) 433-1180",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.mandelagrocery.coop)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://www.mandelagrocery.coop)"
   },
   {
     "city": "Oakland",
@@ -92,7 +99,8 @@
     "url": "https://www.oaklandparks.org",
     "lat": 37.8135,
     "lng": -122.2858,
+    "phone": "311",
     "ver": true,
-    "upd": "Mar 29, 2026, 3:09 PM (Source: https://www.oaklandparks.org)"
+    "upd": "Mar 29, 2026, 3:12 PM (Source: https://www.oaklandparks.org)"
   }
 ]

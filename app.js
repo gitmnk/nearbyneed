@@ -101,7 +101,8 @@ function updateMapMarkers() {
             const popupContent = `
                 <div style="font-family: inherit;">
                     <h3 style="margin: 0 0 5px 0; font-size: 16px;">${item.name}</h3>
-                    <p style="margin: 0 0 10px 0; font-size: 13px; color: #4b5563;">${item.desc}</p>
+                    <p style="margin: 0 0 5px 0; font-size: 13px; color: #4b5563;">${item.desc}</p>
+                    ${item.phone ? `<p style="margin: 0 0 10px 0; font-size: 13px; font-weight: 500;"><a href="tel:${item.phone}" style="color: #2563eb; text-decoration: none;">📞 ${item.phone}</a></p>` : ''}
                     ${item.url ? `<a href="${item.url}" target="_blank" style="display: block; width: 100%; text-align: center; padding: 6px; background: #2563eb; color: white; text-decoration: none; border-radius: 6px; font-weight: 500;">Visit Website</a>` : ''}
                 </div>
             `;
@@ -158,6 +159,11 @@ function renderList() {
                 <i data-lucide="map-pin" size="14"></i>
                 <a href="https://maps.google.com/?q=${encodeURIComponent(item.loc)}" target="_blank" style="color: inherit; text-decoration: underline; text-decoration-color: #9cb3eb; text-underline-offset: 2px;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='inherit'">${item.loc}</a>
             </div>
+            ${item.phone ? `
+            <div class="location-info" style="margin-top: 4px;">
+                <i data-lucide="phone" size="14"></i>
+                <a href="tel:${item.phone}" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='inherit'">${item.phone}</a>
+            </div>` : ''}
             <div class="resource-footer">
                 <span class="updated-at">Confirmed ${item.upd}</span>
                 <div class="card-actions">
