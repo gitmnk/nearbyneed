@@ -1,0 +1,9 @@
+{
+  "name": "nearbyneed-crawler",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Static crawler for fetching open data for NearbyNeed",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

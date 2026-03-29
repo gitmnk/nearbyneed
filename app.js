@@ -1,17 +1,5 @@
-// Seed Data (Simulating fetching from DataSF and Oakland Open Data)
-const dataset = [
-    // San Francisco
-    { city: "SF", name: "GLIDE Daily Meals", cat: "food", desc: "Breakfast, lunch, and dinner served daily. No ID or proof of residency required.", loc: "330 Ellis St, SF", ver: true, upd: "2h ago" },
-    { city: "SF", name: "St. Anthony's Dining Room", cat: "food", desc: "Balanced lunch served daily. Open to everyone. 10:00 AM - 1:30 PM.", loc: "121 Golden Gate Ave, SF", ver: true, upd: "1d ago" },
-    { city: "SF", name: "MSC South (Shelter)", cat: "shelter", desc: "Largest emergency shelter in SF. Call 311 for bed reservation information.", loc: "525 5th St, SF", ver: true, upd: "4h ago" },
-    { city: "SF", name: "Civic Center Water Station", cat: "water", desc: "Clean drinking water bottle filling station. High priority city maintenance.", loc: "Civic Center Plaza, SF", ver: false, upd: "6h ago" },
-    
-    // Oakland
-    { city: "Oakland", name: "St. Vincent de Paul", cat: "food", desc: "Community kitchen serving hot meals. Breakfast: 10:45 AM - 12:45 PM.", loc: "675 23rd St, Oakland", ver: true, upd: "3h ago" },
-    { city: "Oakland", name: "CityTeam Oakland", cat: "shelter", desc: "Men's emergency shelter and hot meals. Check-in at 5:00 PM.", loc: "722 Washington St, Oakland", ver: true, upd: "12h ago" },
-    { city: "Oakland", name: "Mandela Grocery Co-op", cat: "food", desc: "Food bank partners. Verified distribution point for healthy produce.", loc: "1430 7th St, Oakland", ver: true, upd: "1d ago" },
-    { city: "Oakland", name: "DeFremery Park Water", cat: "water", desc: "Public water fountain and bottle fill. Open during park hours.", loc: "1651 Adeline St, Oakland", ver: false, upd: "2d ago" }
-];
+// Global Dataset
+let dataset = [];
 
 // App Logic
 const container = document.getElementById('resource-container');
@@ -20,6 +8,21 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 
 let currentCity = "Detecting...";
 let currentFilter = "all";
+
+async function fetchResources() {
+    try {
+        container.innerHTML = `<div class="loading-state">Fetching real-time resources...</div>`;
+        // Fetch the statically generated JSON built by the GitHub Actions crawler
+        const response = await fetch('./data/resources.json');
+        if (!response.ok) throw new Error("Network response was not ok");
+        
+        dataset = await response.json();
+        updateUI();
+    } catch (error) {
+        console.error("Failed to fetch resources:", error);
+        container.innerHTML = `<div class="loading-state" style="color: var(--danger);">Error loading resources. Please try again later.</div>`;
+    }
+}
 
 function init() {
     // Attempt location detection
@@ -37,15 +40,15 @@ function init() {
                 currentCity = "SF"; // Default for prototype
             }
             
-            updateUI();
+            fetchResources();
         }, () => {
             // Revert to default if blocked
             currentCity = "SF";
-            updateUI();
+            fetchResources();
         });
     } else {
         currentCity = "SF";
-        updateUI();
+        fetchResources();
     }
 }
 
