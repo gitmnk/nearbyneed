@@ -24,7 +24,7 @@ async function fetchCuratedResources(crawlTime) {
     return curatedDataset.map(item => ({
         ...item,
         ver: true,
-        upd: `${crawlTime} (Source: ${item.url || 'Local Database'})`
+        upd: `${crawlTime} (Source: NearbyNeed Curated Database)`
     }));
 }
 
