@@ -3,18 +3,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import ResourceCard from '@/components/ResourceCard';
 import FilterBar from '@/components/FilterBar';
-
-interface ResourceResult {
-  id: string;
-  name: string;
-  type: 'food' | 'shelter' | 'services';
-  distance: number;
-  status: 'OPEN_NOW' | 'STARTING_SOON' | 'CLOSED' | 'UNKNOWN';
-  start_time: string;
-  end_time: string;
-  last_updated_minutes: number;
-  score: number;
-}
+import { rankResources, ResourceResult, Resource } from '@/lib/resourceUtils';
+import rawResources from '../data/resources.json';
 
 export default function Home() {
   const [location, setLocation] = useState<{ lat: number, lng: number } | null>(null);
@@ -23,22 +13,15 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState<string | null>(null);
 
-  const fetchResources = useCallback(async (lat: number, lng: number, type: string | null) => {
+  const processResources = useCallback((lat: number, lng: number, type: string | null) => {
     try {
       setLoading(true);
-      const url = new URL('/api/resources', window.location.origin);
-      url.searchParams.set('lat', lat.toString());
-      url.searchParams.set('lng', lng.toString());
-      if (type) url.searchParams.set('type', type);
-
-      const response = await fetch(url.toString());
-      if (!response.ok) throw new Error('Failed to fetch resources');
-      
-      const data = await response.json();
-      setResources(data.results);
+      // Directly process the imported JSON data (Static/Option A)
+      const ranked = rankResources(rawResources as Resource[], lat, lng, type);
+      setResources(ranked);
       setError(null);
     } catch (err) {
-      setError('Unable to load resources. Try checking your coordinates or network.');
+      setError('Unable to load resources. Please try again later.');
       console.error(err);
     } finally {
       setLoading(false);
@@ -51,21 +34,21 @@ export default function Home() {
         (position) => {
           const { latitude, longitude } = position.coords;
           setLocation({ lat: latitude, lng: longitude });
-          fetchResources(latitude, longitude, filter);
+          processResources(latitude, longitude, filter);
         },
         (err) => {
-          setError('Location access denied. Using default SF coordinates.');
+          setError('Location access denied. Showing results for San Francisco.');
           // Default to SF Civic Center
           const defaultLat = 37.7794;
           const defaultLng = -122.4168;
           setLocation({ lat: defaultLat, lng: defaultLng });
-          fetchResources(defaultLat, defaultLng, filter);
+          processResources(defaultLat, defaultLng, filter);
         }
       );
     } else {
       setError('Geolocation not supported by your browser.');
     }
-  }, [filter, fetchResources]);
+  }, [filter, processResources]);
 
   const handleFilterChange = (newFilter: string | null) => {
     setFilter(newFilter);
