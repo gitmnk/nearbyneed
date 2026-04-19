@@ -17,6 +17,7 @@ export interface Resource {
   last_updated: string;
   source: string;
   notes: string;
+  phone?: string;
 }
 
 export interface ResourceResult {
@@ -29,6 +30,8 @@ export interface ResourceResult {
   end_time: string;
   last_updated_minutes: number;
   score: number;
+  location: { lat: number, lng: number, address: string };
+  phone?: string;
 }
 
 // Haversine formula to calculate distance in miles
@@ -131,7 +134,9 @@ export function rankResources(
       start_time: resource.schedule.start_time,
       end_time: resource.schedule.end_time,
       last_updated_minutes: last_updated_minutes,
-      score: Math.round(score)
+      score: Math.round(score),
+      location: resource.location,
+      phone: resource.phone
     };
   });
 

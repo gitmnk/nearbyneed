@@ -1,16 +1,5 @@
 import React from 'react';
-
-interface ResourceResult {
-  id: string;
-  name: string;
-  type: 'food' | 'shelter' | 'services';
-  distance: number;
-  status: 'OPEN_NOW' | 'STARTING_SOON' | 'CLOSED' | 'UNKNOWN';
-  start_time: string;
-  end_time: string;
-  last_updated_minutes: number;
-  score: number;
-}
+import { ResourceResult } from '@/lib/resourceUtils';
 
 const typeEmojis = {
   food: '🍲',
@@ -61,9 +50,35 @@ const ResourceCard: React.FC<{ resource: ResourceResult }> = ({ resource }) => {
             Rank: {resource.score}
           </div>
         </div>
+
+        {/* Actionable Buttons */}
+        <div className="flex gap-2 mt-4 pt-4 border-t border-slate-100">
+          <a 
+            href={`https://www.google.com/maps/dir/?api=1&destination=${resource.location?.lat},${resource.location?.lng}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 bg-blue-50 hover:bg-blue-100 text-blue-700 text-sm font-bold py-2 rounded-lg text-center transition-colors flex justify-center items-center gap-1.5"
+          >
+            <svg fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+            </svg>
+            Directions
+          </a>
+          {resource.phone && (
+             <a 
+               href={`tel:${resource.phone.replace(/\D/g, '')}`}
+               className="flex-1 bg-slate-50 hover:bg-slate-100 text-slate-700 text-sm font-bold py-2 rounded-lg text-center transition-colors flex justify-center items-center gap-1.5"
+             >
+               <svg fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.733.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+               </svg>
+               Call
+             </a>
+          )}
+        </div>
       </div>
     </div>
   );
-};
+}
 
 export default ResourceCard;
