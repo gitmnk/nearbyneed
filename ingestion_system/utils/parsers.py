@@ -7,24 +7,23 @@ def parse_hours(hours_str: str):
     """
     schedule = {
         "days": [],
-        "start_time": "09:00",
-        "end_time": "17:00",
-        "type": "fixed"
+        "type": "variable"
     }
     
+    if not hours_str:
+        return schedule
+        
     if "Monday–Friday" in hours_str:
         schedule["days"] = ["Mon", "Tue", "Wed", "Thu", "Fri"]
     elif "Monday–Saturday" in hours_str:
         schedule["days"] = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    else:
-        schedule["days"] = ["Mon", "Tue", "Wed", "Thu", "Fri"] # Fallback
         
     # Extract times
     # Normalizing en-dash to hyphen for easier regex
     normalized = hours_str.replace("–", "-")
     times = re.findall(r'(\d+:\d+\s+[ap]m)', normalized.lower())
     
-    if len(times) >= 2:
+    if len(times) >= 2 and schedule["days"]:
         # Convert to HH:MM 24h
         def to_24(t):
             t = t.strip()
@@ -38,5 +37,6 @@ def parse_hours(hours_str: str):
             
         schedule["start_time"] = to_24(times[0])
         schedule["end_time"] = to_24(times[1])
+        schedule["type"] = "fixed"
         
     return schedule

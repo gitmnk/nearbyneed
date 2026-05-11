@@ -194,7 +194,7 @@ export default function Home() {
             ) : (
               <div className="flex flex-col">
                 {resources.length > 0 ? (
-                  resources.slice(0, 5).map((resource) => (
+                  resources.map((resource) => (
                     <ResourceCard key={resource.id} resource={resource} />
                   ))
                 ) : (
