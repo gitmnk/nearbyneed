@@ -41,6 +41,7 @@ To maintain architectural integrity, all tasks must proceed through the followin
 - The sub-agent **MUST** submit the plan to the `TechLead_Manager` for architectural review.
 - The sub-agent **MUST NOT** execute any terminal commands, create directories, or write code changes until receiving an explicit **"PROCEED"** status/approval from `TechLead_Manager`.
 - Any terminal changes proposed during work must be explicitly approved by `TechLead_Manager` under the `review_policy`.
+- **UI Verification Note**: The `TechLead_Manager` **MUST** always verify user-interface implementations by requesting and reviewing a UI screenshot or recording to guarantee responsive wrapping, high-fidelity interactivity, and premium aesthetics before final validation.
 
 ### Phase 3: Implementation (FeatureDeveloper)
 - Once "PROCEED" is received, implementation may begin.
