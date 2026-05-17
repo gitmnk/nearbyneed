@@ -38,7 +38,7 @@ def save_raw_text(url: str, text: str, crawled_at: str) -> str:
 
 
 def append_crawl_log(entry: dict):
-    """Appends a crawl log entry to crawl_log.json."""
+    """Appends a crawl log entry to crawl_log.json (de-duplicates by URL)."""
     log = []
     if os.path.exists(CRAWL_LOG_PATH):
         try:
@@ -46,6 +46,11 @@ def append_crawl_log(entry: dict):
                 log = json.load(f)
         except (json.JSONDecodeError, IOError):
             log = []
+
+    # De-duplicate: filter out any existing entry with a matching URL
+    target_url = entry.get("url")
+    if target_url:
+        log = [item for item in log if item.get("url") != target_url]
 
     log.append(entry)
 

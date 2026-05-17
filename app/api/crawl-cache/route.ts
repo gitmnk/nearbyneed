@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 import { NextRequest } from 'next/server';
 import path from 'path';
 import fs from 'fs';

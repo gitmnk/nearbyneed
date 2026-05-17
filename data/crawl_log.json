@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "url": "https://www.sfhsa.org/services/disability-aging/groceries-meals/community-meals",
+    "crawled_at": "2026-05-17T22:45:55.901951+00:00",
+    "raw_text_file": "data/crawl_cache/www_sfhsa_org_services_disability_aging_groceries_meals_community_meals_20260517_224555.txt",
+    "resources_extracted": [],
+    "total_resources": 0,
+    "phone_missing_count": 0
+  }
+]

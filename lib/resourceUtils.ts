@@ -73,7 +73,7 @@ export function rankResources(
   });
 
   // Filter by type if provided
-  let filtered = filterType 
+  const filtered = filterType 
     ? resources.filter(r => r.type === filterType) 
     : resources;
 

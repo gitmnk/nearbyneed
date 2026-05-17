@@ -103,7 +103,22 @@ export default function DebugPage() {
                   {resources.map((res) => (
                     <tr key={res.id} className="hover:bg-blue-50/50 transition-colors">
                       <td className="px-6 py-4 font-medium text-slate-700">
-                        {res.name}
+                        <div className="flex items-center gap-1.5">
+                          <span>{res.name}</span>
+                          {res.source && res.source.startsWith('http') && (
+                            <a
+                              href={res.source}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-slate-400 hover:text-blue-600 transition-colors"
+                              title={`Go to source: ${res.source}`}
+                            >
+                              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                              </svg>
+                            </a>
+                          )}
+                        </div>
                         {res.notes && (
                           <div className="text-[10px] text-slate-400 font-normal mt-1 whitespace-normal max-w-xs leading-snug">
                             {res.notes}
@@ -120,8 +135,8 @@ export default function DebugPage() {
                         </span>
                       </td>
                       <td className="px-6 py-4">
-                        {(res as any).phone ? (
-                          <span className="font-mono text-slate-700 text-xs">{(res as any).phone}</span>
+                        {res.phone ? (
+                          <span className="font-mono text-slate-700 text-xs">{res.phone}</span>
                         ) : (
                           <span className="text-red-400 text-xs font-bold">⚠ Missing</span>
                         )}
@@ -157,7 +172,7 @@ export default function DebugPage() {
               </table>
             </div>
             <div className="px-6 py-3 border-t border-slate-100 text-xs font-medium text-slate-400">
-              Total: {resources.length} resources · {resources.filter(r => !(r as any).phone).length} missing phone
+              Total: {resources.length} resources · {resources.filter(r => !r.phone).length} missing phone
             </div>
           </div>
         )}
@@ -184,7 +199,7 @@ export default function DebugPage() {
                       href={entry.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline font-mono text-sm truncate block"
+                      className="text-blue-600 hover:underline font-mono text-sm break-all block"
                     >
                       {entry.url}
                     </a>

@@ -1,9 +1,35 @@
-"use server";
-
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const apiKey = process.env.GEMINI_API_KEY || "";
-const genAI = new GoogleGenerativeAI(apiKey);
+function getApiKey(): string {
+  // 1. Check build-time/runtime env variable
+  const envKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+  if (envKey) return envKey;
+
+  // 2. Check query parameter in browser (e.g. ?key=... or ?gemini_key=...)
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+    const queryKey = params.get('gemini_key') || params.get('key');
+    if (queryKey) {
+      // Persist in localStorage for future visits
+      try {
+        localStorage.setItem('gemini_api_key', queryKey);
+      } catch (e) {
+        console.error("Failed to save key to localStorage:", e);
+      }
+      return queryKey;
+    }
+
+    // 3. Check local storage
+    try {
+      const storedKey = localStorage.getItem('gemini_api_key');
+      if (storedKey) return storedKey;
+    } catch (e) {
+      console.error("Failed to read key from localStorage:", e);
+    }
+  }
+
+  return "";
+}
 
 export interface IntentResult {
   type: 'food' | 'shelter' | 'services' | null;
@@ -18,12 +44,14 @@ export interface IntentResult {
 }
 
 export async function parseIntent(query: string): Promise<IntentResult> {
+  const apiKey = getApiKey();
   if (!apiKey) {
     console.warn("No Gemini API key found. Defaulting to general filtering.");
     return { type: null, urgency: 5, needs: "Unknown needs" };
   }
 
   try {
+    const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
     const prompt = `
 You are a dispatcher for an emergency resource network. Based on the user's message, classify their primary need.

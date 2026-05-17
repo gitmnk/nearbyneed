@@ -2,6 +2,7 @@ import os
 import json
 import uuid
 import datetime
+import re
 import google.generativeai as genai
 
 # Setup Gemini API
@@ -17,6 +18,10 @@ def extract_resources(text_content: str, source_url: str) -> list:
     if not api_key:
         print("⚠️ GEMINI_API_KEY not set. Cannot run LLM extractor.")
         return []
+
+    # Pre-pass regex: Extract phone number candidates directly from raw text
+    phone_candidates = re.findall(r'\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}', text_content)
+    unique_candidates = sorted(list(set(phone_candidates)))
 
     # Using Gemini 1.5 Flash for fast, cheap extraction
     model = genai.GenerativeModel("gemini-flash-latest")
@@ -44,6 +49,12 @@ def extract_resources(text_content: str, source_url: str) -> list:
       "notes": "Any other constraints, requirements, or descriptions. Keep it concise.",
       "phone": "Phone number for the specific location. If none is listed, leave it empty."
     }}
+    
+    CRITICAL INSTRUCTION FOR PHONE NUMBERS:
+    We detected the following phone number candidates in the page text using regex:
+    {unique_candidates}
+    
+    Please analyze the text around each resource to match them to these phone number candidates. Do not invent or guess phone numbers; use only these actual numbers if they belong to a specific resource, or other phone numbers explicitly shown in the text.
     
     Text to extract from (Source URL: {source_url}):
     {text_content[:25000]}  # limit text length to avoid token overflow if it's huge
