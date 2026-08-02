@@ -1,6 +1,6 @@
 [
   {
-    "id": "4008dec2-10e3-459c-8c25-37901f049a8d",
+    "id": "18bd48a3-986e-4e64-8db4-108a48ddc3df",
     "name": "30th Street Senior Services",
     "type": "food",
     "location": {
@@ -20,12 +20,12 @@
       "start_time": "10:00",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813121",
+    "last_updated": "2026-08-02T01:44:31.132177",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 10:00 am–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "0bc5bd2d-1873-470d-8d5d-7c20f43756c5",
+    "id": "5afac705-ac2d-4c9b-b5ed-823f95ff71cd",
     "name": "Alice Griffith Community Center",
     "type": "food",
     "location": {
@@ -45,12 +45,12 @@
       "start_time": "12:00",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813144",
+    "last_updated": "2026-08-02T01:44:31.132198",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 12:00 pm–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "d07a0ebb-667a-461d-b2f6-afe36b7bb709",
+    "id": "32a10726-75b7-47e1-9e1d-f56b7b455c4d",
     "name": "Aquatic Park Branch -San Francisco Senior Center",
     "type": "food",
     "location": {
@@ -70,12 +70,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813154",
+    "last_updated": "2026-08-02T01:44:31.132205",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "4176aff7-e663-443b-bb2e-0f8c25de0fc7",
+    "id": "bf25a0ba-23e4-4f4f-bf8f-f15a532f2d74",
     "name": "Armstrong Senior Center",
     "type": "food",
     "location": {
@@ -95,12 +95,12 @@
       "start_time": "12:00",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813163",
+    "last_updated": "2026-08-02T01:44:31.132211",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 12:00 pm–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "ffb9a9ba-09e5-4f29-8e7a-5ea1329be4fa",
+    "id": "a53cea15-3c9f-418c-aa34-d9fa6bf618e5",
     "name": "Bernal Heights Neighborhood Center (BHNC)",
     "type": "food",
     "location": {
@@ -120,12 +120,12 @@
       "start_time": "11:00",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813171",
+    "last_updated": "2026-08-02T01:44:31.132216",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:00 am–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "62f18a74-9745-48e6-a0c6-cad33e9e9fda",
+    "id": "e775997c-aed3-4a73-814f-e8505335bee6",
     "name": "Canon Kip Senior Center",
     "type": "food",
     "location": {
@@ -145,12 +145,12 @@
       "start_time": "11:00",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813178",
+    "last_updated": "2026-08-02T01:44:31.132222",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:00 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "1b0f3389-74da-4be5-9cbd-da80d6a97d40",
+    "id": "a4f93590-ea1c-4774-a2a5-7eecfcdc1a4e",
     "name": "Castro Senior Center",
     "type": "food",
     "location": {
@@ -170,12 +170,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813186",
+    "last_updated": "2026-08-02T01:44:31.132227",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "771dc191-6028-4a66-b2b2-5161ade96441",
+    "id": "8faf361f-fc2c-42d5-a0da-c3a60b29c69a",
     "name": "Centro Latino de San Francisco/Los Mayores",
     "type": "food",
     "location": {
@@ -196,12 +196,12 @@
       "start_time": "11:30",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813195",
+    "last_updated": "2026-08-02T01:44:31.132235",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 11:30 am–1:00 pm | Sunday: | Closed"
   },
   {
-    "id": "30efc160-20f3-452d-ac81-38cdbf213243",
+    "id": "dfaa5b29-ffab-49c0-be56-d2304d262d00",
     "name": "CHAMPSS: Crazy Pepper",
     "type": "food",
     "location": {
@@ -213,12 +213,12 @@
       "days": [],
       "type": "variable"
     },
-    "last_updated": "2026-08-01T01:47:46.813200",
+    "last_updated": "2026-08-02T01:44:31.132239",
     "source": "SFHSA",
     "notes": "Monday: | Closed | Tuesday–Sunday: | 11:00 am–2:30 pm"
   },
   {
-    "id": "6a4eb981-ea4b-45ef-986f-a72d71af8532",
+    "id": "3f41b722-5a45-4220-80cc-5ebbb730221d",
     "name": "CHAMPSS: SoHoMei",
     "type": "food",
     "location": {
@@ -230,12 +230,12 @@
       "days": [],
       "type": "variable"
     },
-    "last_updated": "2026-08-01T01:47:46.813205",
+    "last_updated": "2026-08-02T01:44:31.132243",
     "source": "SFHSA",
     "notes": "Monday: | Closed | Tuesday–Sunday: | 11:00 am–9:00 pm"
   },
   {
-    "id": "52089fb5-6c9b-476b-8539-1beb51c319cc",
+    "id": "fc7bd247-495e-4772-812b-9f437f67be2f",
     "name": "CHAMPSS: Venus Café",
     "type": "food",
     "location": {
@@ -247,12 +247,12 @@
       "days": [],
       "type": "variable"
     },
-    "last_updated": "2026-08-01T01:47:46.813210",
+    "last_updated": "2026-08-02T01:44:31.132246",
     "source": "SFHSA",
     "notes": "Monday–Sunday: | 2:00 pm–6:00 pm"
   },
   {
-    "id": "f7f9dcf3-e879-4a97-bae9-6ec318ecb92b",
+    "id": "cc69973d-ae4d-4faf-8aff-b5902932f2fa",
     "name": "Chi Sing Community Center",
     "type": "food",
     "location": {
@@ -272,12 +272,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813218",
+    "last_updated": "2026-08-02T01:44:31.132254",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "14efc7e9-dbbf-4d1a-956d-746e9d88dd61",
+    "id": "d60328d6-8337-40c0-a630-e06d16a9a982",
     "name": "Curry Senior Center",
     "type": "food",
     "location": {
@@ -297,12 +297,12 @@
       "start_time": "08:30",
       "end_time": "09:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813231",
+    "last_updated": "2026-08-02T01:44:31.132264",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 8:30 am–9:30 am | 11:00 am–12:30 pm | Saturday–Sunday: | 8:30 am–9:30 am | Breakfast weekend service restarted in February 2026."
   },
   {
-    "id": "6dc85a82-61f5-4229-b8ae-a0f5059cd5f7",
+    "id": "d93368d6-7dfa-416e-837a-05648d9c7473",
     "name": "Downtown Branch - San Francisco Senior Center",
     "type": "food",
     "location": {
@@ -322,17 +322,17 @@
       "start_time": "09:00",
       "end_time": "10:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813241",
+    "last_updated": "2026-08-02T01:44:31.132272",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 9:00 am–10:00 am | 11:00 am–12:00 pm | Saturday–Sunday: | Closed | Breakfast for older adults ONLY; lunch for older adults and adults with disabilities."
   },
   {
-    "id": "1da32dae-84e8-4484-93ae-09067d0f32c2",
+    "id": "5804b52e-733c-4690-990a-8beb3936b487",
     "name": "Dr. Davis Senior Center",
     "type": "food",
     "location": {
-      "lat": 37.7261454,
-      "lng": -122.395602,
+      "lat": 37.7261136,
+      "lng": -122.395546,
       "address": "1753 Carroll Avenue"
     },
     "schedule": {
@@ -348,12 +348,12 @@
       "start_time": "12:00",
       "end_time": "13:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813249",
+    "last_updated": "2026-08-02T01:44:31.132278",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 12:00 pm–1:30 pm | Sunday: | Closed"
   },
   {
-    "id": "c9e69667-afae-4f15-881c-8926dd2b678e",
+    "id": "8fe2c6a2-6927-42ef-9ec4-af913b69a216",
     "name": "Edwin M. Lee Apartments",
     "type": "food",
     "location": {
@@ -374,12 +374,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813257",
+    "last_updated": "2026-08-02T01:44:31.132283",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 11:30 am–12:30 pm | Sunday: | Closed"
   },
   {
-    "id": "92c6a780-88e2-4bdd-a835-6d006c61e935",
+    "id": "6a8a464b-ab51-40e0-8517-26e1edb565fb",
     "name": "Excelsior Senior Center",
     "type": "food",
     "location": {
@@ -399,17 +399,17 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813265",
+    "last_updated": "2026-08-02T01:44:31.132290",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed | Reopened with Project Open Hand (POH) in February 2026."
   },
   {
-    "id": "4872a033-508d-499c-9b8d-2991eb271114",
+    "id": "8760ea22-0bf8-44a4-937f-8637658b779b",
     "name": "Geneva Community Center",
     "type": "food",
     "location": {
-      "lat": 37.7177229,
-      "lng": -122.4399079,
+      "lat": 37.717182,
+      "lng": -122.440587,
       "address": "5050 Mission Street"
     },
     "schedule": {
@@ -424,12 +424,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813273",
+    "last_updated": "2026-08-02T01:44:31.132295",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "8af49cbb-acdb-404c-aafd-fe8a4f6662e2",
+    "id": "70a7ca33-d3b0-4eb6-97be-8b8d06832a9c",
     "name": "Glide",
     "type": "food",
     "location": {
@@ -441,17 +441,17 @@
       "days": [],
       "type": "variable"
     },
-    "last_updated": "2026-08-01T01:47:46.813277",
+    "last_updated": "2026-08-02T01:44:31.132299",
     "source": "SFHSA",
     "notes": "Monday–Sunday: | 7:30 am–9:00 am"
   },
   {
-    "id": "9355b827-cf12-4822-9c52-f363f5f8e866",
+    "id": "5bc0cb55-3956-4156-85dc-ef6c795d3870",
     "name": "Jackie Chan Senior Center",
     "type": "food",
     "location": {
-      "lat": 37.7801306,
-      "lng": -122.4810326,
+      "lat": 37.7804155,
+      "lng": -122.4810557,
       "address": "5757 Geary Boulevard"
     },
     "schedule": {
@@ -467,12 +467,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813284",
+    "last_updated": "2026-08-02T01:44:31.132304",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 11:30 am–12:30 pm | Sunday: | Closed"
   },
   {
-    "id": "81022e67-8c23-4b39-9b81-612888720ca6",
+    "id": "a8866c2f-b993-4872-a6e1-df2e79e37476",
     "name": "John King at Visitacion Valley",
     "type": "food",
     "location": {
@@ -492,12 +492,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813291",
+    "last_updated": "2026-08-02T01:44:31.132309",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "3c5b5978-fe6f-48f6-9fce-9120dcfa36f5",
+    "id": "a067d9ba-c0d2-4536-9f3c-f93b0dbad5cc",
     "name": "Jon W. Paulson Veterans Community (Swords to Plowshares)",
     "type": "food",
     "location": {
@@ -518,12 +518,12 @@
       "start_time": "16:30",
       "end_time": "17:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813301",
+    "last_updated": "2026-08-02T01:44:31.132316",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 4:30 pm–5:30 pm | Sunday: | Closed"
   },
   {
-    "id": "b3c78205-7548-498b-9151-1a29791bb200",
+    "id": "9dcf1621-716c-425e-b32b-638611fca373",
     "name": "Kimochi Senior Center",
     "type": "food",
     "location": {
@@ -543,12 +543,12 @@
       "start_time": "10:00",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813310",
+    "last_updated": "2026-08-02T01:44:31.132323",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 10:00 am–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "da47f91f-04f0-43a1-ad04-e3948d3bea53",
+    "id": "bef16333-18e9-40df-842a-36934cafed34",
     "name": "Lady Shaw Senior Center",
     "type": "food",
     "location": {
@@ -568,12 +568,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813317",
+    "last_updated": "2026-08-02T01:44:31.132329",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "c9bf95fa-e98a-492d-9127-484b6cb546f2",
+    "id": "45cf6337-5273-40c2-b649-c47d5673a757",
     "name": "Maceo May",
     "type": "food",
     "location": {
@@ -593,12 +593,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813324",
+    "last_updated": "2026-08-02T01:44:31.132334",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "0c6e4373-bb9f-46f1-8b4b-6e0004f7d09c",
+    "id": "8e22b14e-99c5-4518-9657-af1375ea510b",
     "name": "Manilatown Senior Center",
     "type": "food",
     "location": {
@@ -618,12 +618,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813331",
+    "last_updated": "2026-08-02T01:44:31.132339",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "10e157d2-9301-4ae3-ab88-dafc231afef0",
+    "id": "4800797e-07da-4d86-9d88-077131454d23",
     "name": "Mendelsohn House",
     "type": "food",
     "location": {
@@ -643,12 +643,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813338",
+    "last_updated": "2026-08-02T01:44:31.132346",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "85119675-37fb-40b1-aff4-4e5578ec3aa4",
+    "id": "be6cfc26-5b4f-4561-a1c6-b756453db23b",
     "name": "Minna Lee",
     "type": "food",
     "location": {
@@ -668,12 +668,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813347",
+    "last_updated": "2026-08-02T01:44:31.132351",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "34d25921-f493-4252-bb87-82122fcd17d0",
+    "id": "9bf4fd0e-bf47-44d1-aa4c-54bad6cfc65c",
     "name": "Mission Neighborhood Center",
     "type": "food",
     "location": {
@@ -694,12 +694,12 @@
       "start_time": "12:00",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813354",
+    "last_updated": "2026-08-02T01:44:31.132357",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 12:00 pm–1:00 pm | Sunday: | Closed"
   },
   {
-    "id": "f7e20170-84cb-4f98-b576-fb836d5da954",
+    "id": "31b9ca05-c80e-49c2-855e-06b8f173939b",
     "name": "OMI Senior Center",
     "type": "food",
     "location": {
@@ -719,12 +719,12 @@
       "start_time": "10:30",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813361",
+    "last_updated": "2026-08-02T01:44:31.132362",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 10:30 am–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "11643f30-5bc7-43b7-a0a6-b9749f065683",
+    "id": "e989dcef-2968-4c1a-9551-ad2694412e72",
     "name": "On Low Wui Senior Center/Geen Mun Senior Center",
     "type": "food",
     "location": {
@@ -745,12 +745,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813368",
+    "last_updated": "2026-08-02T01:44:31.132367",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 11:30 am–12:30 pm | Sunday: | Closed"
   },
   {
-    "id": "034b171a-33ca-4939-a25a-4afa5e3f382c",
+    "id": "4f4c9f58-7339-4089-8ace-84cd85d4af8f",
     "name": "Richmond Senior Center",
     "type": "food",
     "location": {
@@ -770,12 +770,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813375",
+    "last_updated": "2026-08-02T01:44:31.132372",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "8c32c0b1-db87-418f-b327-932f1f22cbda",
+    "id": "cb272710-a44e-48b3-aed1-71f83751145f",
     "name": "Rosa Parks Senior Center",
     "type": "food",
     "location": {
@@ -795,12 +795,12 @@
       "start_time": "12:00",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813382",
+    "last_updated": "2026-08-02T01:44:31.132378",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 12:00 pm–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "336de3e5-522b-4bad-8fa9-6afb2a828cd5",
+    "id": "6a680814-2c4e-4dbe-8a96-f7a2fecb409a",
     "name": "Russian American Community Services",
     "type": "food",
     "location": {
@@ -820,12 +820,12 @@
       "start_time": "10:30",
       "end_time": "13:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813389",
+    "last_updated": "2026-08-02T01:44:31.132383",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 10:30 am–1:00 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "372802eb-f0f5-4972-a65d-3430d4b3d673",
+    "id": "94a05a1f-1613-428e-ae6b-d3a2eef3ae56",
     "name": "Ruth Brinker / Takeout Center",
     "type": "food",
     "location": {
@@ -845,12 +845,12 @@
       "start_time": "10:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813401",
+    "last_updated": "2026-08-02T01:44:31.132392",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 10:30 am–12:30 pm | Saturday–Sunday: | Closed | Site address changed in February 2026."
   },
   {
-    "id": "49b91aee-04e6-4517-b54a-54c070614f01",
+    "id": "1c17498f-44f6-4724-8fca-213ce815f0fe",
     "name": "Samoan Community Development Center",
     "type": "food",
     "location": {
@@ -862,12 +862,12 @@
       "days": [],
       "type": "variable"
     },
-    "last_updated": "2026-08-01T01:47:46.813407",
+    "last_updated": "2026-08-02T01:44:31.132397",
     "source": "SFHSA",
     "notes": "Monday: | 12:00 pm–1:00 pm | Tuesday: | Closed | Wednesday: | 12:00 pm–1:00 pm | Thursday: | Closed"
   },
   {
-    "id": "9bbf464e-5859-45ce-8730-aa0f9a596e7f",
+    "id": "527e1c0e-cb5c-4e40-984a-219ff2d84eed",
     "name": "Friday:",
     "type": "food",
     "location": {
@@ -879,17 +879,17 @@
       "days": [],
       "type": "variable"
     },
-    "last_updated": "2026-08-01T01:47:46.813411",
+    "last_updated": "2026-08-02T01:44:31.132400",
     "source": "SFHSA",
     "notes": "Saturday–Sunday: | Closed"
   },
   {
-    "id": "29e9e680-bd01-43d1-a0f8-a8e7d5977c67",
+    "id": "f93e2eec-db1a-4906-a264-64290895e9c8",
     "name": "Stanford Hotel (Swords to Plowshares)",
     "type": "food",
     "location": {
-      "lat": 37.7905383,
-      "lng": -122.4038805,
+      "lat": 37.7904933,
+      "lng": -122.4038711,
       "address": "250 Kearny Street"
     },
     "schedule": {
@@ -904,12 +904,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813465",
+    "last_updated": "2026-08-02T01:44:31.132449",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "ce86b412-46fa-471e-83b9-8fe239d749ba",
+    "id": "9d2c8c63-9c71-4d4d-9b1a-d2dc90d7ef66",
     "name": "Star Hotel",
     "type": "food",
     "location": {
@@ -929,12 +929,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813473",
+    "last_updated": "2026-08-02T01:44:31.132454",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "0ee1baa4-aaa7-4d08-9a09-384b73333da6",
+    "id": "de3c18bb-d235-415f-83e0-e5b89a05622c",
     "name": "Stonestown YMCA",
     "type": "food",
     "location": {
@@ -954,12 +954,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813481",
+    "last_updated": "2026-08-02T01:44:31.132460",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "1492b75e-88a9-4a11-9523-62e2b8bc677a",
+    "id": "634dce45-9338-48ff-9e6c-00e132e3dc74",
     "name": "Telegraph Hill Neighborhood Center",
     "type": "food",
     "location": {
@@ -979,12 +979,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813488",
+    "last_updated": "2026-08-02T01:44:31.132465",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "9127aff0-d9de-4690-be66-78f579ac4111",
+    "id": "268fdbdd-b580-4dbe-a5fd-a95eab793f66",
     "name": "Veterans Commons (Swords to Plowshares)",
     "type": "food",
     "location": {
@@ -1005,12 +1005,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813495",
+    "last_updated": "2026-08-02T01:44:31.132470",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 11:30 am–12:30 pm | Sunday: | Closed"
   },
   {
-    "id": "120b8477-b9fe-420f-a228-0fdcf74701ef",
+    "id": "c946f612-f2d9-4a1e-a907-4183baa1fac7",
     "name": "Veterans Community Center",
     "type": "food",
     "location": {
@@ -1031,12 +1031,12 @@
       "start_time": "14:00",
       "end_time": "15:00"
     },
-    "last_updated": "2026-08-01T01:47:46.813502",
+    "last_updated": "2026-08-02T01:44:31.132476",
     "source": "SFHSA",
     "notes": "Monday–Saturday: | 2:00 pm–3:00 pm | Sunday: | Closed"
   },
   {
-    "id": "da3695fa-f3ca-4e75-8df3-1ea8e250e7b3",
+    "id": "b7170e9c-1820-4b09-a074-e6d3c7719ffe",
     "name": "Visitacion Valley Community Center",
     "type": "food",
     "location": {
@@ -1056,12 +1056,12 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813509",
+    "last_updated": "2026-08-02T01:44:31.132481",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "4003fda8-e384-4c05-84df-fdcfa6ece803",
+    "id": "74a82d74-68f3-4f76-97e9-b35a801c7e45",
     "name": "West Portal Club House",
     "type": "food",
     "location": {
@@ -1081,29 +1081,29 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813516",
+    "last_updated": "2026-08-02T01:44:31.132486",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   },
   {
-    "id": "5375edbe-0b78-4d8a-a955-5782b4990c8b",
+    "id": "d905c0d0-5fa1-4ceb-8998-c34b74b5f8c6",
     "name": "Western Addition Senior Center",
     "type": "food",
     "location": {
-      "lat": 37.780608,
-      "lng": -122.4313231,
+      "lat": 37.7824889,
+      "lng": -122.4165378,
       "address": "1390 1/2 Turk Street"
     },
     "schedule": {
       "days": [],
       "type": "variable"
     },
-    "last_updated": "2026-08-01T01:47:46.813526",
+    "last_updated": "2026-08-02T01:44:31.132491",
     "source": "SFHSA",
     "notes": "Monday–Sunday: | 12:00 pm–1:30 pm"
   },
   {
-    "id": "6516652d-d650-411d-ba5a-a12c0701c4f3",
+    "id": "2be61c21-f5b0-4a80-8343-436f6a40f8dd",
     "name": "Woolf House",
     "type": "food",
     "location": {
@@ -1123,7 +1123,7 @@
       "start_time": "11:30",
       "end_time": "12:30"
     },
-    "last_updated": "2026-08-01T01:47:46.813534",
+    "last_updated": "2026-08-02T01:44:31.132499",
     "source": "SFHSA",
     "notes": "Monday–Friday: | 11:30 am–12:30 pm | Saturday–Sunday: | Closed"
   }
